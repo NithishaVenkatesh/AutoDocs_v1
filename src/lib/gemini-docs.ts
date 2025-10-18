@@ -35,7 +35,7 @@ const log = {
 };
 
 // Initialize Gemini AI
-const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY || '');
+const genAI = new GoogleGenerativeAI("AIzaSyDeIoy2s-0allB6FKb0P9sIi3C3E9-cFHg");
 const model = genAI.getGenerativeModel({ model: 'gemini-2.5-flash' });
 
 // Text splitter configuration
