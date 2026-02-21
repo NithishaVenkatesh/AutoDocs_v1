@@ -49,22 +49,22 @@ flowchart LR
 
 ```mermaid
 flowchart TB
-    subgraph Frontend[Client Runtime]
-      DASH[Dashboard Component\nReact state + handlers]
-      RC[RepositoryCard]
-      SB[Sidebar]
-      TB[Topbar]
+    subgraph Frontend["Client Runtime"]
+      DASH["Dashboard Component - React state + handlers"]
+      RC["RepositoryCard"]
+      SB["Sidebar"]
+      TB["Topbar"]
     end
 
-    subgraph Server[Next.js Server Runtime]
-      DOC[Documentation Page\nAuth + SQL queries]
-      API[API Handlers\n(referenced, not in snapshot)]
+    subgraph Server["Next.js Server Runtime"]
+      DOC["Documentation Page - Auth + SQL queries"]
+      API["API Handlers - referenced, not in snapshot"]
     end
 
-    subgraph Data[Data Layer]
-      PG[(Neon Postgres)]
-      GH[GitHub REST API]
-      CL[Clerk]
+    subgraph Data["Data Layer"]
+      PG[("Neon Postgres")]
+      GH["GitHub REST API"]
+      CL["Clerk"]
     end
 
     DASH --> API
